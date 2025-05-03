@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Repository;
 
 use App\Model\Starship;
+use App\Model\StarshipStatusEnum;
 use Psr\Log\LoggerInterface;
 
 class StarshipRepository
@@ -24,21 +25,21 @@ class StarshipRepository
                 'USS Enterprise',
                 'Aircraft Carrier',
                 'James T. Kirk',
-                'Active'
+                StarshipStatusEnum::COMPLETED
             ),
             new Starship(
                 2,
                 'HMS Defender',
                 'Destroyer',
                 'Sarah Thompson',
-                'Under Maintenance'
+                StarshipStatusEnum::IN_PROGRESS
             ),
             new Starship(
                 3,
                 'INS Vikrant',
                 'Aircraft Carrier',
                 'Rajesh Kumar',
-                'Deployed'
+                StarshipStatusEnum::WAITING
             ),
         ];
     }
