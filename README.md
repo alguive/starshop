@@ -16,10 +16,6 @@ This is the first SymfonyCasts tutorial of Symfony 7 'Cosmic Coding with Symfony
 * Maker Bundle
 
 
-
-
-
-
 ### Maker Bundle
 
 ---
